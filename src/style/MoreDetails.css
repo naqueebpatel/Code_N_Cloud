@@ -1,0 +1,147 @@
+/* MoreDetails.css */
+
+.details-background {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 50px;
+    margin-top: 95px;
+  }
+  
+  .details-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .details-image {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .inner-details-container {
+    max-width: 600px;
+  }
+  
+  .inner-details-container h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .inner-details-container p {
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #007bff;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+  }
+  
+  .yvideo-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .yvideo{
+    width:560px; 
+    height:315px;
+      }
+   iframe{
+    width:560px; 
+    height:315px;
+    }
+
+    @media screen and (min-width: 1024px) {
+  
+    }
+    
+      @media screen and (min-width: 767px)and(max-width:1023) {
+        .details-container{
+          flex-direction: column;
+        }
+        .yvideo-container {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        iframe{
+          width:290px; 
+        height:180px;
+        }
+        .details-image {
+          margin-right: 10px;
+        }
+        /* .yvideo{
+          width:560px; 
+          height:200px;
+            } */
+    }
+      
+      @media screen and (max-width: 767px) {
+        .details-container{
+          flex-direction: column;
+        }
+        .details-image {
+          width: 270px;
+          height: 170px;
+        }
+        .yvideo-container{
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+        }
+        iframe{
+          width:250px; 
+        height:180px;
+        }
+        .details-image {
+          width: 270px;
+          height: 170px;
+          margin: 0;
+          margin-bottom: 15px;
+        }
+        .yvideo{
+          width:560px; 
+          height:200px;
+            }
+    }
+
+  /* @media screen and (max-width: 650px) {
+    .details-container{
+      flex-direction: column;
+    }
+    iframe{
+      width:290px; 
+    height:180px;
+    }
+    .details-image {
+      margin-right: 0;
+    }
+    .yvideo{
+      width:560px; 
+      height:200px;
+        }
+
+  } */
+
+  
+
+
+
+
+  

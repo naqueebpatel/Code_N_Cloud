@@ -1,0 +1,120 @@
+body {
+  overflow-x: hidden;
+}
+
+.slick-side > div {
+  margin-right: 10px; 
+}
+
+.alumni-heading {
+  text-align: center;
+  padding-top: 30px;
+  color: rgb(23, 28, 155);
+}
+
+/* Animation CSS */
+:root {
+  --color-primary-white: rgb(240, 240, 240);
+}
+
+.alumni-card {
+  width: 100%;
+  max-width: 24rem;
+  height: 30rem;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  position: relative;
+  color: var(--color-primary-white);
+  box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  margin-left: 35px;
+  width: 300px;
+}
+
+.alumni-card img {
+  position: absolute;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  transition: opacity 0.2s ease-out;
+}
+
+.alumni-card h2 {
+  position: absolute;
+  inset: auto auto 30px 30px;
+  margin: 0;
+  transition: inset 0.3s 0.3s ease-out;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+.alumni-card p {
+  position: absolute;
+  opacity: 0;
+  max-width: 90%; 
+  transition: opacity 0.3s ease-out;
+  bottom: 20px; 
+}
+
+.alumni-card p {
+  inset: auto auto 50px 30px;
+  font-size: large;
+  transition-delay: 0.1s; 
+}
+
+.alumni-course-name {
+  font-size: larger;
+  inset: auto auto 80px 30px;
+  transition-delay: 0.3s; 
+}
+
+.alumni-card:hover h2 {
+  inset: auto auto 30% 30px;
+  transition: inset 0.3s ease-out;
+}
+
+.alumni-card:hover p {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  bottom: 10px; 
+}
+
+.alumni-card:hover .alumni-course-name {
+  opacity: 1;
+  transition: opacity 0.5s ease-in;
+  bottom: 90px; 
+}
+
+.alumni-card:hover img {
+  transition: opacity 0.3s ease-in;
+  opacity: 1;
+}
+
+.material-symbols-outlined {
+  vertical-align: middle;
+}
+
+
+.alumni-container{
+  display: flex;
+  align-items: center;
+}
+
+
+.alumni-container .slick-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Or directly apply to the card container */
+.trying {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* Other necessary styles */
+}

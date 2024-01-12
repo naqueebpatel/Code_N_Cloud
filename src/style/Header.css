@@ -1,0 +1,214 @@
+.link{
+  padding-left: 15px;
+  text-decoration: none;
+}
+.headerBox{
+  padding-top: 80px;
+  padding-bottom: 30px;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.headerBox2{
+  padding-top: 0px;
+  padding-bottom: 30px;
+  margin-bottom: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.headerBox2 p{
+  font-size: 20px;
+}
+
+.headerInfo{
+  height: 375px;
+  width: 500px;
+  
+}
+
+.headerInfo p{
+  font-size: 18px;
+  line-height: 25px;
+  color: black;
+
+} 
+
+.headerImg{
+  max-width: 100%;
+  
+}
+
+img{
+  height: 350px;
+  width: 500px;
+  border-radius: 8px;
+}
+
+.headerMain{
+  padding-bottom: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around
+  
+  
+}
+
+
+.button-40 {
+background-color: #111827;
+border: 1px solid transparent;
+border-radius: .5rem; 
+box-sizing: border-box;
+color: #FFFFFF;
+cursor: pointer;
+flex: 0 0 auto;
+font-family: "Inter var", ui-sans-serif, system-ui, -apple-system, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+font-size: 1rem; 
+font-weight: 600;
+line-height: 1.25rem; 
+padding: .4rem .8rem; 
+text-align: center;
+text-decoration: none solid #6B7280;
+width: auto;
+}
+
+
+.email-input {
+  width: 350px; /* Adjust width as needed */
+  padding: 10px; /* Adjust padding as needed */
+  font-size: 16px; /* Adjust font size as needed */
+  border: 1px solid #ccc; /* Border style */
+  border-radius: 5px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+/* Styling for when the input is focused */
+.email-input:focus {
+  outline: none; /* Remove default focus outline */
+  border-color: dodgerblue; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add a subtle box shadow on focus */
+}
+
+.embut{
+  display: flex;
+  align-items:center;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  padding-top: 0px;
+  margin-left: 20px;
+  padding-bottom: 30px;
+}
+
+
+@media (max-width: 999px) {
+  .headerImg {
+    margin-top: 50px;
+    /* Additional styles for screens larger than 1000px */
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .headerImg {
+    margin-top: 105px;
+    /* Additional styles for screens larger than 1000px */
+  }
+  .embut{
+    margin-left: 20px;
+  }
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+  50% {
+    background-color: #49e819;
+    box-shadow: 0 0 20px #49e819;
+  }
+  100% {
+    background-color: #2ba805;
+    box-shadow: 0 0 5px #2ba805;
+  }
+}
+.gbutton {
+  animation: glowing 1300ms infinite;
+}
+
+/* body{background:#59ABE3;margin:0} */
+
+/* input,select, optgroup, textarea {
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+outline: none;
+background: none;
+border: none;
+border-bottom: 2px solid #bebed2;
+} */
+
+
+input,select, optgroup, textarea {
+margin: 0;
+font-family: inherit;
+font-size: inherit;
+line-height: inherit;
+outline: none;
+/* background: none; */
+border: none;
+border-bottom: 2px solid #bebed2;
+}
+
+
+.btn {
+  font-size: 1.2rem;
+  padding: 1rem 2.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: rgb(14, 14, 26);
+  color: rgb(234, 234, 234);
+  font-weight: 700;
+  transition: 0.6s;
+  box-shadow: 0px 0px 60px #1f4c65;
+  -webkit-box-reflect: below 10px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+  margin-bottom: 42px;
+  margin-top: 20px;
+}
+
+.btn:active {
+  scale: 0.92;
+}
+
+.btn:hover {
+  background: rgb(2,29,78);
+  background: linear-gradient(270deg, rgba(2, 29, 78, 0.681) 0%, rgba(31, 215, 232, 0.873) 60%);
+  color: rgb(4, 4, 38);
+}
+
+
+
+
+.whatsapp-container{
+  position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.whatsapp-icon{
+  width: 50px; 
+    height: auto;
+    border-radius: 50%;
+    cursor: pointer;
+}
